@@ -1,6 +1,6 @@
 @import '@fortawesome/fontawesome-free/css/all.css';
 
-.App {
+App {
   text-align: center;
 }
 
@@ -87,13 +87,11 @@ html {
   }
 }
 
-
 .fixed .active {
   background-color: #4a90e2; /* Highlight the active section's button */
   transform: scale(1.1); /* Slightly enlarge the active button */
   transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
-
 
 #skills {
   background-color: transparent;
@@ -111,16 +109,26 @@ html {
   color: #fbbf24;
 }
 
-
 #work-experience .container {
   max-width: 600px; /* Adjust to match the compact width */
   margin: 0 auto; /* Center the timeline */
 }
 
 #work-experience .relative {
-  padding-left: 1.5rem; /* Adjust padding to bring dots closer to text */
+  padding-left: 2rem; /* Ensure there's enough space for the timeline */
 }
 
+#work-experience .absolute {
+  left: -3rem; /* Adjust this value to align the dots with the line */
+}
+
+#work-experience .w-6.h-6 {
+  margin-left: 0.125rem; /* Fine-tune alignment */
+}
+
+#work-experience .border-l-2 {
+  margin-left: 0.875rem; /* Adjust the timeline's line */
+}
 #work-experience .pl-8 {
   padding-left: 1.5rem; /* Reduce padding for a compact look */
 }
@@ -137,3 +145,24 @@ html {
   font-size: 1.25rem; /* Slightly smaller headings */
 }
 
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0; /* Ensure elements are initially hidden */
+}
+
+.description {
+  font-size: 0.75rem; /* Reduce text size */
+  line-height: 1.2; /* Compact line height */
+  color: #d1d5db; /* Ensure readability (light gray) */
+}
