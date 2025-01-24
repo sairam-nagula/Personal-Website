@@ -11,69 +11,74 @@ function App() {
 
       {/* Main Content */}
       <main className="container mx-auto px-4">
-        <section
-          id="home"
-          className="relative flex flex-col justify-center items-center h-screen bg-black text-center"
-        >
-          <p className="text-lg mb-4 text-gray-300">Hi, my name is</p>
-          <h1 className="text-6xl font-bold mb-6 text-white">Sairam Nagula.</h1>
+     <section
+  id="home"
+  className="relative flex flex-col justify-center items-center h-screen bg-black text-center"
+>
+  <p className="text-lg mb-4 text-gray-300">Hi, my name is</p>
+  <h1
+  className="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-300 via-blue-400 to-blue-500 text-transparent bg-clip-text leading-tight"
+  
+>
+  Sairam Nagula.
+</h1>
 
-          {/* Animated Line */}
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto animated-text">
-            <span className="word">I</span>
-            <span className="word">specialize</span>
-            <span className="word">in</span>
-            <span className="word">building</span>
-            <span className="word">applications</span>
-            <span className="word">combining</span>
-            <span className="word">my</span>
-            <span className="word">skills</span>
-            <span className="word">in</span>
-            <span className="word">software</span>
-            <span className="word">engineering</span>
-            <span className="word">and</span>
-            <span className="word">innovation.</span>
-          </p>
+  {/* Animated Line */}
+  <p className="text-xl text-gray-400 max-w-2xl mx-auto animated-text">
+    <span className="word">I</span>
+    <span className="word">specialize</span>
+    <span className="word">in</span>
+    <span className="word">building</span>
+    <span className="word">applications</span>
+    <span className="word">combining</span>
+    <span className="word">my</span>
+    <span className="word">skills</span>
+    <span className="word">in</span>
+    <span className="word">software</span>
+    <span className="word">engineering</span>
+    <span className="word">and</span>
+    <span className="word">innovation.</span>
+  </p>
 
-          <div className="flex justify-center space-x-6 mt-6">
-            <a
-              href="https://www.linkedin.com/in/sairamnagula"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-600"
-            >
-              <i className="fab fa-linkedin text-3xl"></i>
-            </a>
-            <a
-              href="https://github.com/sairam-nagula"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-600"
-            >
-              <i className="fab fa-github text-3xl"></i>
-            </a>
-          </div>
+  <div className="flex justify-center space-x-6 mt-6">
+    <a
+      href="https://www.linkedin.com/in/sairamnagula"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-400 hover:text-blue-600"
+    >
+      <i className="fab fa-linkedin text-3xl"></i>
+    </a>
+    <a
+      href="https://github.com/sairam-nagula"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-400 hover:text-blue-600"
+    >
+      <i className="fab fa-github text-3xl"></i>
+    </a>
+  </div>
 
-          {/* Bouncing Arrow */}
-          <div className="absolute bottom-20 animate-bounce">
-            <a href="#about">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 text-gray-400 hover:text-white"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M12 4v16m0 0l-8-8m8 8l8-8"
-                />
-              </svg>
-            </a>
-          </div>
-        </section>
+  {/* Bouncing Arrow */}
+  <div className="absolute bottom-20 animate-bounce">
+    <a href="#about">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-8 w-8 text-gray-400 hover:text-white"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M12 4v16m0 0l-8-8m8 8l8-8"
+        />
+      </svg>
+    </a>
+  </div>
+</section>
 
         {/* Sidebar Navigation */}
         <div className="fixed top-1/3 right-8 z-50 flex flex-col space-y-4">
@@ -100,36 +105,40 @@ function App() {
           ))}
         </div>
 
-        {/* About Section */}
         <section
-          id="about"
-          className="relative flex items-center justify-center h-screen bg-black text-white px-8"
-        >
-          {/* Left Side: Content */}
-          <div className="w-1/2 text-left">
-            <h2 className="text-3xl font-bold mb-6 text-white">About Me</h2>
-            <p className="text-base text-gray-300 mb-4">
-              I am currently pursuing my B.S. in Computer Science with a minor in Business at the UCF. My coursework includes Data Structures & Algorithms, Machine Learning,
-              Systems Software, and Security in Computing.
-            </p>
-            <p className="text-base text-gray-300 mb-4">
-              Over the years, I've worked on exciting projects, such as an AI Sudoku Solver, a three-tier
-              distributed website, and a Java-based banking simulator. Additionally, I co-founded the
-              Engineering Without Borders club at UCF, which focuses on professional growth among students.
-            </p>
-            <p className="text-base text-gray-300">
-              I'm skilled in Java, Python, React, Node.js, and more, and I have professional experience as
-              a Data Science Intern, where I conducted in-depth data analysis and supported cross-functional
-              teams.
-            </p>
-          </div>
+  id="about"
+  className="relative flex items-center justify-center h-screen bg-black text-white px-8"
+>
+  {/* Left Side: Content */}
+  <div className="w-1/2 text-left">
+    <h2 className="text-4xl font-extrabold mb-6 text-white">
+      About Me
+    </h2>
+    <p className="text-lg text-gray-400 leading-relaxed mb-6">
+      I am currently pursuing my B.S. in Computer Science with a minor in Business at UCF. My coursework includes Data Structures & Algorithms, Machine Learning,
+      Systems Software, and Security in Computing.
+    </p>
+    <p className="text-lg text-gray-400 leading-relaxed mb-6">
+      Over the years, I've worked on exciting projects, such as an AI Sudoku Solver, a three-tier
+      distributed website, and a Java-based banking simulator. Additionally, I co-founded the
+      Engineering Without Borders club at UCF, which focuses on professional growth among students.
+    </p>
+    <p className="text-lg text-gray-400 leading-relaxed">
+      I'm skilled in Java, Python, React, Node.js, and more. I also have professional experience as
+      a Data Science Intern, where I conducted in-depth data analysis and supported cross-functional
+      teams to solve business challenges.
+    </p>
+  </div>
 
-          {/* Right Side: Placeholder for Image */}
-          <div className="w-1/2 flex justify-center items-center">
-            {/* Add your image or placeholder here */}
-            <div className="w-[300px] h-[300px] bg-gray-700 rounded-full"></div>
-          </div>
-        </section>
+  {/* Right Side: Animation GIF */}
+  <div className="w-1/2 flex justify-center items-center">
+    <img
+      src={`${process.env.PUBLIC_URL}/animation.gif`}
+      alt="Animation"
+      className="w-[450px] h-[450px] object-cover rounded-full shadow-xl"
+    />
+  </div>
+</section>
 
 
      {/* Work Experience Section */}
@@ -174,72 +183,72 @@ function App() {
   <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-white">
     {/* Languages */}
     <div className="bg-gray-900 shadow-lg rounded-lg p-8">
-      <h3 className="text-2xl font-bold mb-6 text-blue-400 flex items-center">
+      <h3 className="text-3xl font-extrabold mb-4 text-blue-400 flex items-center border-b-2 border-blue-400 pb-2">
         <i className="fas fa-code mr-3 text-3xl"></i> Languages
       </h3>
-      <ul className="space-y-3 text-lg">
-        <li className="flex items-center">
-          <i className="fas fa-file-code text-blue-400 text-xl mr-3"></i> C/C++
+      <ul className="space-y-3 text-lg text-center">
+        <li className="flex items-center justify-center">
+          <i className="fas fa-file-code text-blue-400 text-2xl mr-3"></i> C/C++
         </li>
-        <li className="flex items-center">
-          <i className="fab fa-java text-blue-400 text-xl mr-3"></i> Java
+        <li className="flex items-center justify-center">
+          <i className="fab fa-java text-blue-400 text-2xl mr-3"></i> Java
         </li>
-        <li className="flex items-center">
-          <i className="fab fa-html5 text-blue-400 text-xl mr-3"></i> HTML
+        <li className="flex items-center justify-center">
+          <i className="fab fa-html5 text-blue-400 text-2xl mr-3"></i> HTML
         </li>
-        <li className="flex items-center">
-          <i className="fab fa-python text-blue-400 text-xl mr-3"></i> Python
+        <li className="flex items-center justify-center">
+          <i className="fab fa-python text-blue-400 text-2xl mr-3"></i> Python
         </li>
-        <li className="flex items-center">
-          <i className="fab fa-js-square text-blue-400 text-xl mr-3"></i> JavaScript
+        <li className="flex items-center justify-center">
+          <i className="fab fa-js-square text-blue-400 text-2xl mr-3"></i> JavaScript
         </li>
-        <li className="flex items-center">
-          <i className="fas fa-database text-blue-400 text-xl mr-3"></i> SQL
+        <li className="flex items-center justify-center">
+          <i className="fas fa-database text-blue-400 text-2xl mr-3"></i> SQL
         </li>
-        <li className="flex items-center">
-          <i className="fab fa-react text-blue-400 text-xl mr-3"></i> React Native
+        <li className="flex items-center justify-center">
+          <i className="fab fa-react text-blue-400 text-2xl mr-3"></i> React Native
         </li>
       </ul>
     </div>
 
     {/* Developer Tools */}
     <div className="bg-gray-900 shadow-lg rounded-lg p-8">
-      <h3 className="text-2xl font-bold mb-6 text-green-400 flex items-center">
+      <h3 className="text-3xl font-extrabold mb-4 text-green-400 flex items-center border-b-2 border-green-400 pb-2">
         <i className="fas fa-tools mr-3 text-3xl"></i> Developer Tools
       </h3>
-      <ul className="space-y-3 text-lg">
-        <li className="flex items-center">
-          <i className="fas fa-code-branch text-green-400 text-xl mr-3"></i> Git
+      <ul className="space-y-3 text-lg text-center">
+        <li className="flex items-center justify-center">
+          <i className="fas fa-code-branch text-green-400 text-2xl mr-3"></i> Git
         </li>
-        <li className="flex items-center">
-          <i className="fas fa-terminal text-green-400 text-xl mr-3"></i> VS Code
+        <li className="flex items-center justify-center">
+          <i className="fas fa-terminal text-green-400 text-2xl mr-3"></i> VS Code
         </li>
-        <li className="flex items-center">
-          <i className="fas fa-laptop-code text-green-400 text-xl mr-3"></i> Visual Studio
+        <li className="flex items-center justify-center">
+          <i className="fas fa-laptop-code text-green-400 text-2xl mr-3"></i> Visual Studio
         </li>
-        <li className="flex items-center">
-          <i className="fas fa-cloud text-green-400 text-xl mr-3"></i> Vercel
+        <li className="flex items-center justify-center">
+          <i className="fas fa-cloud text-green-400 text-2xl mr-3"></i> Vercel
         </li>
-        <li className="flex items-center">
-          <i className="fas fa-database text-green-400 text-xl mr-3"></i> MySQL
+        <li className="flex items-center justify-center">
+          <i className="fas fa-database text-green-400 text-2xl mr-3"></i> MySQL
         </li>
-        <li className="flex items-center">
-          <i className="fas fa-bug text-green-400 text-xl mr-3"></i> Wireshark
+        <li className="flex items-center justify-center">
+          <i className="fas fa-bug text-green-400 text-2xl mr-3"></i> Wireshark
         </li>
       </ul>
     </div>
 
     {/* Frameworks */}
     <div className="bg-gray-900 shadow-lg rounded-lg p-8">
-      <h3 className="text-2xl font-bold mb-6 text-yellow-400 flex items-center">
+      <h3 className="text-3xl font-extrabold mb-4 text-yellow-400 flex items-center border-b-2 border-yellow-400 pb-2">
         <i className="fas fa-project-diagram mr-3 text-3xl"></i> Frameworks
       </h3>
-      <ul className="space-y-3 text-lg">
-        <li className="flex items-center">
-          <i className="fab fa-react text-yellow-400 text-xl mr-3"></i> React
+      <ul className="space-y-3 text-lg text-center">
+        <li className="flex items-center justify-center">
+          <i className="fab fa-react text-yellow-400 text-2xl mr-3"></i> React
         </li>
-        <li className="flex items-center">
-          <i className="fab fa-node-js text-yellow-400 text-xl mr-3"></i> Node.js
+        <li className="flex items-center justify-center">
+          <i className="fab fa-node-js text-yellow-400 text-2xl mr-3"></i> Node.js
         </li>
       </ul>
     </div>
