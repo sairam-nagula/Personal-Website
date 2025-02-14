@@ -301,12 +301,19 @@ function App() {
 </section>
 
 
-{/* Projects Section */}
+/* Projects Section */
 <section id="projects" className="py-16 bg-black">
   <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold mb-8 text-center text-white">Projects</h2>
     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       {[
+        {
+          title: "FitAI - AI Fitness App",
+          description:
+            "Mobile fitness app offering Personalized Workout Recommendations and an AI-Powered Chat Coach to help users achieve their fitness goals. Built with React Native (Expo CLI) and Firebase for authentication and storage, utilizes the OpenAI API.",
+          languages: "React Native, Firebase, OpenAI API",
+          github: "https://github.com/sairam-nagula/FitAI",
+        },
         {
           title: "Three Tier Distributed Website",
           description:
@@ -362,6 +369,7 @@ function App() {
     </div>
   </div>
 </section>
+
 
         
    {/* Services Section */}
