@@ -159,7 +159,42 @@ function App() {
   <div className="container mx-auto px-8">
     <h2 className="text-3xl font-bold mb-8 text-center text-white">Experience</h2>
     <div className="relative border-l-2 border-gray-700 pl-12">
-      {/* Entry 1 */}
+      {/* Entry 1*/}
+      <div
+        className="mb-8 transition-opacity duration-700 delay-600"
+      >
+        <div className="absolute left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"></div>
+        <p className="text-sm text-gray-400 mb-1">March 2025 - Present</p>
+        <h3 className="text-lg font-semibold">
+          <span className="text-lg font-semibold text-blue-400">
+            Data Science & IT Intern <span className="text-gray-400">| Margaritaville At Sea</span>
+          </span>
+        </h3>
+        <p className="text-gray-300 mt-1">
+          Assisted with data collection, cleaning, and analysis to support business decision-making. Helped design and maintain internal tools that improved operational efficiency and reporting. Contributed to troubleshooting technical issues, ensuring smooth system performance while supporting data-driven initiatives.
+        </p>
+      </div>
+
+      {/* Entry 1.1 */}
+      <div
+        ref={entry1Ref}
+        className={`mb-8 transition-opacity duration-700 ${
+          entry1InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        }`}
+      >
+        <div className="absolute left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"></div>
+        <p className="text-sm text-gray-400 mb-1">April 2025 - December 2025</p>
+        <h3 className="text-lg font-semibold">
+          <span className="text-lg font-semibold text-blue-400">
+            AI & Machine Learning Intern <span className="text-gray-400">| Northrop Grumman</span>
+          </span>
+        </h3>
+        <p className="text-gray-300 mt-1">
+          Built a smart monitoring system for 3D printers that uses sensor data to detect issues early, schedule maintenance, and send real-time alerts. Designed with a multi-agent architecture and delivered as a product for Northrop Grumman to streamline lab operations and reduce downtime.
+        </p>
+      </div>
+
+      {/* Entry 1.2 */}
       <div
         ref={entry1Ref}
         className={`mb-8 transition-opacity duration-700 ${
@@ -218,6 +253,8 @@ function App() {
           Fostered teamwork and contributed to achieving high customer satisfaction scores.
         </p>
       </div>
+
+      
     </div>
   </div>
 </section>
