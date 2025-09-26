@@ -301,7 +301,7 @@ function App() {
 </section>
 
 
-/* Projects Section */
+{/* Projects Section */}
 <section id="projects" className="py-16 bg-black">
   <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold mb-8 text-center text-white">Projects</h2>
