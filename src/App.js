@@ -300,8 +300,191 @@ function App() {
   </div>
 </section>
 
+  {/* Work Experience Section */}
+<section id="work-experience" className="py-16">
+  <div className="container mx-auto px-8">
+    <h2 className="text-3xl font-bold mb-8 text-center text-white">Experience</h2>
+    <div className="relative border-l-2 border-gray-700 pl-12">
+      {/* Entry 1*/}
+      <div
+        className="mb-8 transition-opacity duration-700 delay-600"
+      >
+        <div className="absolute left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"></div>
+        <p className="text-sm text-gray-400 mb-1">March 2025 - Present</p>
+        <h3 className="text-lg font-semibold">
+          <span className="text-lg font-semibold text-blue-400">
+            Data Science & IT Intern <span className="text-gray-400">| Margaritaville At Sea</span>
+          </span>
+        </h3>
+        <p className="text-gray-300 mt-1">
+          Assisted with data collection, cleaning, and analysis to support business decision-making. Helped design and maintain internal tools that improved operational efficiency and reporting. Contributed to troubleshooting technical issues, ensuring smooth system performance while supporting data-driven initiatives.
+        </p>
+      </div>
 
-/* Projects Section */
+      {/* Entry 1.1 */}
+      <div
+        ref={entry1Ref}
+        className={`mb-8 transition-opacity duration-700 ${
+          entry1InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        }`}
+      >
+        <div className="absolute left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"></div>
+        <p className="text-sm text-gray-400 mb-1">April 2025 - December 2025</p>
+        <h3 className="text-lg font-semibold">
+          <span className="text-lg font-semibold text-blue-400">
+            AI & Machine Learning Intern <span className="text-gray-400">| Northrop Grumman</span>
+          </span>
+        </h3>
+        <p className="text-gray-300 mt-1">
+          Built a smart monitoring system for 3D printers that uses sensor data to detect issues early, schedule maintenance, and send real-time alerts. Designed with a multi-agent architecture and delivered as a product for Northrop Grumman to streamline lab operations and reduce downtime.
+        </p>
+      </div>
+
+      {/* Entry 1.2 */}
+      <div
+        ref={entry1Ref}
+        className={`mb-8 transition-opacity duration-700 ${
+          entry1InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        }`}
+      >
+        <div className="absolute left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"></div>
+        <p className="text-sm text-gray-400 mb-1">Apr. 2024 – Jun. 2024</p>
+        <h3 className="text-lg font-semibold">
+          <span className="text-lg font-semibold text-blue-400">
+            Data Science Intern <span className="text-gray-400">| ChaTeck, Inc.</span>
+          </span>
+        </h3>
+        <p className="text-gray-300 mt-1">
+          Conducted in-depth data analysis to resolve transaction issues, improving client report accuracy.
+          Delivered actionable insights to enhance operational decision-making for business improvements.
+        </p>
+      </div>
+
+      {/* Entry 2 */}
+      <div
+        ref={entry2Ref}
+        className={`mb-8 transition-opacity duration-700 delay-200 ${
+          entry2InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        }`}
+      >
+        <div className="absolute left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"></div>
+        <p className="text-sm text-gray-400 mb-1">Nov. 2024 – Present</p>
+        <h3 className="text-lg font-semibold">
+          <span className="text-lg font-semibold text-blue-400">
+            Co-Founder & Tech Lead <span className="text-gray-400">| Engineering Without Borders</span>
+          </span>
+        </h3>
+        <p className="text-gray-300 mt-1">
+          Designed a website increasing outreach by 50% and enhancing communication for 40+ members.
+          Led technical initiatives to modernize club operations and expand its digital footprint.
+        </p>
+      </div>
+
+      {/* Entry 3 */}
+      <div
+        ref={entry3Ref}
+        className={`mb-8 transition-opacity duration-700 delay-400 ${
+          entry3InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        }`}
+      >
+        <div className="absolute left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"></div>
+        <p className="text-sm text-gray-400 mb-1">Mar. 2022 – Jan. 2024</p>
+        <h3 className="text-lg font-semibold">
+          <span className="text-lg font-semibold text-blue-400">
+            Trainer & Barista <span className="text-gray-400">| Starbucks Coffee Company</span>
+          </span>
+        </h3>
+        <p className="text-gray-300 mt-1">
+          Trained new hires and delivered excellent service in a fast-paced environment.
+          Fostered teamwork and contributed to achieving high customer satisfaction scores.
+        </p>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+     {/* Skills Section */}
+<section id="skills" className="py-16 bg-black">
+  <h2 className="text-4xl font-bold mb-10 text-center text-white">Skills</h2>
+  <div className="container mx-auto grid grid-cols-1 gap-8 md:grid-cols-3 text-white">
+    {/* Languages */}
+    <div className="bg-gray-900 shadow-lg rounded-lg p-6 md:p-8">
+      <h3 className="text-2xl md:text-3xl font-extrabold mb-4 text-blue-400 flex items-center border-b-2 border-blue-400 pb-2">
+        <i className="fas fa-code mr-3 text-xl md:text-3xl"></i> Languages
+      </h3>
+      <ul className="space-y-2 text-sm md:text-lg">
+        <li className="flex items-center">
+          <i className="fas fa-file-code text-blue-400 text-xl md:text-2xl mr-3"></i> C/C++
+        </li>
+        <li className="flex items-center">
+          <i className="fab fa-java text-blue-400 text-xl md:text-2xl mr-3"></i> Java
+        </li>
+        <li className="flex items-center">
+          <i className="fab fa-html5 text-blue-400 text-xl md:text-2xl mr-3"></i> HTML
+        </li>
+        <li className="flex items-center">
+          <i className="fab fa-python text-blue-400 text-xl md:text-2xl mr-3"></i> Python
+        </li>
+        <li className="flex items-center">
+          <i className="fab fa-js-square text-blue-400 text-xl md:text-2xl mr-3"></i> JavaScript
+        </li>
+        <li className="flex items-center">
+          <i className="fas fa-database text-blue-400 text-xl md:text-2xl mr-3"></i> SQL
+        </li>
+        <li className="flex items-center">
+          <i className="fab fa-react text-blue-400 text-xl md:text-2xl mr-3"></i> React Native
+        </li>
+      </ul>
+    </div>
+
+    {/* Developer Tools */}
+    <div className="bg-gray-900 shadow-lg rounded-lg p-6 md:p-8">
+      <h3 className="text-2xl md:text-3xl font-extrabold mb-4 text-green-400 flex items-center border-b-2 border-green-400 pb-2">
+        <i className="fas fa-tools mr-3 text-xl md:text-3xl"></i> Developer Tools
+      </h3>
+      <ul className="space-y-2 text-sm md:text-lg">
+        <li className="flex items-center">
+          <i className="fas fa-code-branch text-green-400 text-xl md:text-2xl mr-3"></i> Git
+        </li>
+        <li className="flex items-center">
+          <i className="fas fa-terminal text-green-400 text-xl md:text-2xl mr-3"></i> VS Code
+        </li>
+        <li className="flex items-center">
+          <i className="fas fa-laptop-code text-green-400 text-xl md:text-2xl mr-3"></i> Visual Studio
+        </li>
+        <li className="flex items-center">
+          <i className="fas fa-cloud text-green-400 text-xl md:text-2xl mr-3"></i> Vercel
+        </li>
+        <li className="flex items-center">
+          <i className="fas fa-database text-green-400 text-xl md:text-2xl mr-3"></i> MySQL
+        </li>
+        <li className="flex items-center">
+          <i className="fas fa-bug text-green-400 text-xl md:text-2xl mr-3"></i> Wireshark
+        </li>
+      </ul>
+    </div>
+
+    {/* Frameworks */}
+    <div className="bg-gray-900 shadow-lg rounded-lg p-6 md:p-8">
+      <h3 className="text-2xl md:text-3xl font-extrabold mb-4 text-yellow-400 flex items-center border-b-2 border-yellow-400 pb-2">
+        <i className="fas fa-project-diagram mr-3 text-xl md:text-3xl"></i> Frameworks
+      </h3>
+      <ul className="space-y-2 text-sm md:text-lg">
+        <li className="flex items-center">
+          <i className="fab fa-react text-yellow-400 text-xl md:text-2xl mr-3"></i> React
+        </li>
+        <li className="flex items-center">
+          <i className="fab fa-node-js text-yellow-400 text-xl md:text-2xl mr-3"></i> Node.js
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+{/* Projects Section */}
 <section id="projects" className="py-16 bg-black">
   <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold mb-8 text-center text-white">Projects</h2>
