@@ -128,14 +128,14 @@ function App() {
       About Me
     </h2>
     <p className="text-sm md:text-lg text-gray-400 leading-relaxed mb-6">
-      I am currently pursuing my B.S. in Computer Science with a minor in Business at UCF. My coursework includes Data Structures & Algorithms, Machine Learning, Systems Software, and Security in Computing.
-    </p>
+      I am currently pursuing a Master's degree in Computer Science with a concentration in Artificial Intelligence/Machine Learning.   
+      </p>
     <p className="text-sm md:text-lg text-gray-400 leading-relaxed mb-6">
-      Over the years, I've worked on exciting projects, such as an AI Sudoku Solver, a three-tier distributed website, and a Java-based banking simulator. Additionally, I co-founded the Engineering Without Borders club at UCF, which focuses on professional growth among students.
+      In recent months, I’ve been deeply involved in developing real-world AI and data automation systems. As a Data Science Intern at Margaritaville at Sea, I’ve built automated Python scripts that integrate with Azure and Microsoft 365 APIs to analyze license usage, generate cost dashboards, and streamline reporting pipelines used by management.
     </p>
     <p className="text-sm md:text-lg text-gray-400 leading-relaxed">
-      I'm skilled in Java, Python, React, Node.js, and more. I also have professional experience as a Data Science Intern, where I conducted in-depth data analysis and supported cross-functional teams to solve business challenges.
-    </p>
+      I'm skilled in Java, Python, React, Node.js, and more. And for my Senior Design project, I’m leading the AI architecture for an Agentic 3D Printer Maintenance System, which leverages multi-agent orchestration, real-time anomaly detection, and LangChain-based reasoning models to monitor and optimize 3D printer operations.
+        </p>
   </div>
 
   {/* Right Side: Animation GIF */}
