@@ -151,16 +151,27 @@ function App() {
 
 
 
-  {/* Work Experience Section */}
+ {/* Work Experience Section (REPLACEMENT) */}
 <section id="work-experience" className="py-16">
   <div className="container mx-auto px-8">
     <h2 className="text-3xl font-bold mb-8 text-center text-white">Experience</h2>
-    <div className="relative border-l-2 border-gray-700 pl-12">
-      {/* Entry 1*/}
+
+    {/* Timeline wrapper */}
+    <div className="relative pl-12">
+      {/* vertical line */}
       <div
-        className="mb-8 transition-opacity duration-700 delay-600"
-      >
-        <div className="absolute left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"></div>
+        className="absolute left-0 top-0 h-full border-l-2 border-gray-700"
+        aria-hidden="true"
+      ></div>
+
+      {/* Entry 1 */}
+      <div className="relative mb-10">
+        {/* dot */}
+        <span
+          className="absolute left-0 -translate-x-1/2 top-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"
+          aria-hidden="true"
+        ></span>
+
         <p className="text-sm text-gray-400 mb-1">March 2025 - Present</p>
         <h3 className="text-lg font-semibold">
           <span className="text-lg font-semibold text-blue-400">
@@ -168,18 +179,25 @@ function App() {
           </span>
         </h3>
         <p className="text-gray-300 mt-1">
-          Assisted with data collection, cleaning, and analysis to support business decision-making. Helped design and maintain internal tools that improved operational efficiency and reporting. Contributed to troubleshooting technical issues, ensuring smooth system performance while supporting data-driven initiatives.
+          Assisted with data collection, cleaning, and analysis to support business
+          decision-making. Helped design and maintain internal tools that improved operational
+          efficiency and reporting. Contributed to troubleshooting technical issues to support
+          data-driven initiatives.
         </p>
       </div>
 
       {/* Entry 1.1 */}
       <div
         ref={entry1Ref}
-        className={`mb-8 transition-opacity duration-700 ${
+        className={`relative mb-10 transition-opacity duration-700 ${
           entry1InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
-        <div className="absolute left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"></div>
+        <span
+          className="absolute left-0 -translate-x-1/2 top-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"
+          aria-hidden="true"
+        ></span>
+
         <p className="text-sm text-gray-400 mb-1">April 2025 - December 2025</p>
         <h3 className="text-lg font-semibold">
           <span className="text-lg font-semibold text-blue-400">
@@ -187,18 +205,24 @@ function App() {
           </span>
         </h3>
         <p className="text-gray-300 mt-1">
-          Built a smart monitoring system for 3D printers that uses sensor data to detect issues early, schedule maintenance, and send real-time alerts. Designed with a multi-agent architecture and delivered as a product for Northrop Grumman to streamline lab operations and reduce downtime.
+          Built a smart monitoring system for 3D printers using sensor data to detect issues early,
+          schedule maintenance, and send real-time alerts. Delivered with a multi-agent
+          architecture to streamline lab operations and reduce downtime.
         </p>
       </div>
 
       {/* Entry 1.2 */}
       <div
-        ref={entry1Ref}
-        className={`mb-8 transition-opacity duration-700 ${
-          entry1InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        ref={entry2Ref}
+        className={`relative mb-10 transition-opacity duration-700 ${
+          entry2InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
-        <div className="absolute left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"></div>
+        <span
+          className="absolute left-0 -translate-x-1/2 top-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"
+          aria-hidden="true"
+        ></span>
+
         <p className="text-sm text-gray-400 mb-1">Apr. 2024 – Jun. 2024</p>
         <h3 className="text-lg font-semibold">
           <span className="text-lg font-semibold text-blue-400">
@@ -206,19 +230,23 @@ function App() {
           </span>
         </h3>
         <p className="text-gray-300 mt-1">
-          Conducted in-depth data analysis to resolve transaction issues, improving client report accuracy.
-          Delivered actionable insights to enhance operational decision-making for business improvements.
+          Performed in-depth data analysis to resolve transaction issues and improve client report
+          accuracy. Delivered insights that enhanced operational decision-making.
         </p>
       </div>
 
       {/* Entry 2 */}
       <div
-        ref={entry2Ref}
-        className={`mb-8 transition-opacity duration-700 delay-200 ${
-          entry2InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
+        ref={entry3Ref}
+        className={`relative mb-10 transition-opacity duration-700 ${
+          entry3InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
-        <div className="absolute left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"></div>
+        <span
+          className="absolute left-0 -translate-x-1/2 top-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"
+          aria-hidden="true"
+        ></span>
+
         <p className="text-sm text-gray-400 mb-1">Nov. 2024 – Present</p>
         <h3 className="text-lg font-semibold">
           <span className="text-lg font-semibold text-blue-400">
@@ -226,19 +254,18 @@ function App() {
           </span>
         </h3>
         <p className="text-gray-300 mt-1">
-          Designed a website increasing outreach by 50% and enhancing communication for 40+ members.
-          Led technical initiatives to modernize club operations and expand its digital footprint.
+          Designed a website that increased outreach by 50% and improved communications for 40+
+          members. Led technical initiatives to modernize club operations.
         </p>
       </div>
 
       {/* Entry 3 */}
-      <div
-        ref={entry3Ref}
-        className={`mb-8 transition-opacity duration-700 delay-400 ${
-          entry3InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
-        }`}
-      >
-        <div className="absolute left-3 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"></div>
+      <div className="relative mb-2">
+        <span
+          className="absolute left-0 -translate-x-1/2 top-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"
+          aria-hidden="true"
+        ></span>
+
         <p className="text-sm text-gray-400 mb-1">Mar. 2022 – Jan. 2024</p>
         <h3 className="text-lg font-semibold">
           <span className="text-lg font-semibold text-blue-400">
@@ -246,12 +273,10 @@ function App() {
           </span>
         </h3>
         <p className="text-gray-300 mt-1">
-          Trained new hires and delivered excellent service in a fast-paced environment.
-          Fostered teamwork and contributed to achieving high customer satisfaction scores.
+          Trained new hires and delivered excellent service in a fast-paced environment. Promoted
+          teamwork and consistent customer satisfaction.
         </p>
       </div>
-
-      
     </div>
   </div>
 </section>
