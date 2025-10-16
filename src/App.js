@@ -151,32 +151,24 @@ function App() {
 
 
 
- {/* Work Experience Section (REPLACEMENT) */}
+{/* Work Experience Section (Fixed Alignment) */}
 <section id="work-experience" className="py-16">
   <div className="container mx-auto px-8">
     <h2 className="text-3xl font-bold mb-8 text-center text-white">Experience</h2>
 
     {/* Timeline wrapper */}
-    <div className="relative pl-12">
-      {/* vertical line */}
-      <div
-        className="absolute left-0 top-0 h-full border-l-2 border-gray-700"
-        aria-hidden="true"
-      ></div>
+    <div className="relative ml-6">
+      {/* Vertical line */}
+      <div className="absolute left-3 top-0 w-0.5 h-full bg-gray-700" aria-hidden="true"></div>
 
       {/* Entry 1 */}
-      <div className="relative mb-10">
-        {/* dot */}
-        <span
-          className="absolute left-0 -translate-x-1/2 top-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"
-          aria-hidden="true"
-        ></span>
+      <div className="relative mb-10 pl-8">
+        {/* Dot */}
+        <span className="absolute left-0 top-1 w-5 h-5 bg-blue-500 rounded-full border-2 border-gray-800"></span>
 
         <p className="text-sm text-gray-400 mb-1">March 2025 - Present</p>
-        <h3 className="text-lg font-semibold">
-          <span className="text-lg font-semibold text-blue-400">
-            Data Science & IT Intern <span className="text-gray-400">| Margaritaville At Sea</span>
-          </span>
+        <h3 className="text-lg font-semibold text-blue-400">
+          Data Science & IT Intern <span className="text-gray-400">| Margaritaville At Sea</span>
         </h3>
         <p className="text-gray-300 mt-1">
           Assisted with data collection, cleaning, and analysis to support business
@@ -186,23 +178,18 @@ function App() {
         </p>
       </div>
 
-      {/* Entry 1.1 */}
+      {/* Entry 2 */}
       <div
         ref={entry1Ref}
-        className={`relative mb-10 transition-opacity duration-700 ${
+        className={`relative mb-10 pl-8 transition-opacity duration-700 ${
           entry1InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
-        <span
-          className="absolute left-0 -translate-x-1/2 top-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"
-          aria-hidden="true"
-        ></span>
+        <span className="absolute left-0 top-1 w-5 h-5 bg-blue-500 rounded-full border-2 border-gray-800"></span>
 
         <p className="text-sm text-gray-400 mb-1">April 2025 - December 2025</p>
-        <h3 className="text-lg font-semibold">
-          <span className="text-lg font-semibold text-blue-400">
-            AI & Machine Learning Intern <span className="text-gray-400">| Northrop Grumman</span>
-          </span>
+        <h3 className="text-lg font-semibold text-blue-400">
+          AI & Machine Learning Intern <span className="text-gray-400">| Northrop Grumman</span>
         </h3>
         <p className="text-gray-300 mt-1">
           Built a smart monitoring system for 3D printers using sensor data to detect issues early,
@@ -211,23 +198,18 @@ function App() {
         </p>
       </div>
 
-      {/* Entry 1.2 */}
+      {/* Entry 3 */}
       <div
         ref={entry2Ref}
-        className={`relative mb-10 transition-opacity duration-700 ${
+        className={`relative mb-10 pl-8 transition-opacity duration-700 ${
           entry2InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
-        <span
-          className="absolute left-0 -translate-x-1/2 top-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"
-          aria-hidden="true"
-        ></span>
+        <span className="absolute left-0 top-1 w-5 h-5 bg-blue-500 rounded-full border-2 border-gray-800"></span>
 
         <p className="text-sm text-gray-400 mb-1">Apr. 2024 – Jun. 2024</p>
-        <h3 className="text-lg font-semibold">
-          <span className="text-lg font-semibold text-blue-400">
-            Data Science Intern <span className="text-gray-400">| ChaTeck, Inc.</span>
-          </span>
+        <h3 className="text-lg font-semibold text-blue-400">
+          Data Science Intern <span className="text-gray-400">| ChaTeck, Inc.</span>
         </h3>
         <p className="text-gray-300 mt-1">
           Performed in-depth data analysis to resolve transaction issues and improve client report
@@ -235,23 +217,18 @@ function App() {
         </p>
       </div>
 
-      {/* Entry 2 */}
+      {/* Entry 4 */}
       <div
         ref={entry3Ref}
-        className={`relative mb-10 transition-opacity duration-700 ${
+        className={`relative mb-10 pl-8 transition-opacity duration-700 ${
           entry3InView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
         }`}
       >
-        <span
-          className="absolute left-0 -translate-x-1/2 top-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"
-          aria-hidden="true"
-        ></span>
+        <span className="absolute left-0 top-1 w-5 h-5 bg-blue-500 rounded-full border-2 border-gray-800"></span>
 
         <p className="text-sm text-gray-400 mb-1">Nov. 2024 – Present</p>
-        <h3 className="text-lg font-semibold">
-          <span className="text-lg font-semibold text-blue-400">
-            Co-Founder & Tech Lead <span className="text-gray-400">| Engineering Without Borders</span>
-          </span>
+        <h3 className="text-lg font-semibold text-blue-400">
+          Co-Founder & Tech Lead <span className="text-gray-400">| Engineering Without Borders</span>
         </h3>
         <p className="text-gray-300 mt-1">
           Designed a website that increased outreach by 50% and improved communications for 40+
@@ -259,18 +236,13 @@ function App() {
         </p>
       </div>
 
-      {/* Entry 3 */}
-      <div className="relative mb-2">
-        <span
-          className="absolute left-0 -translate-x-1/2 top-1 w-6 h-6 bg-blue-500 rounded-full border-2 border-gray-700"
-          aria-hidden="true"
-        ></span>
+      {/* Entry 5 */}
+      <div className="relative mb-2 pl-8">
+        <span className="absolute left-0 top-1 w-5 h-5 bg-blue-500 rounded-full border-2 border-gray-800"></span>
 
         <p className="text-sm text-gray-400 mb-1">Mar. 2022 – Jan. 2024</p>
-        <h3 className="text-lg font-semibold">
-          <span className="text-lg font-semibold text-blue-400">
-            Trainer & Barista <span className="text-gray-400">| Starbucks Coffee Company</span>
-          </span>
+        <h3 className="text-lg font-semibold text-blue-400">
+          Trainer & Barista <span className="text-gray-400">| Starbucks Coffee Company</span>
         </h3>
         <p className="text-gray-300 mt-1">
           Trained new hires and delivered excellent service in a fast-paced environment. Promoted
